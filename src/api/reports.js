@@ -20,10 +20,6 @@ export async function submitReport(category) {
     throw new Error ('Ungültige Anfrage');
   }
 
-  if (!response.ok){
     throw new Error('HTTP-Fehler; ' + response.status);
-  }
-
-  return response.json();
-  // Statuscodes hier behandeln.
+  
 }
