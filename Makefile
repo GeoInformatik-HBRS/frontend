@@ -2,7 +2,7 @@
 
 # Install dependencies exactly as recorded in package-lock.json
 local-setup:
-	npm install
+	npm ci --include=dev
 
 # Start the Vite dev server on http://localhost:5173
 local-run:
