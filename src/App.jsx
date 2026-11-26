@@ -1,3 +1,4 @@
+import HealthStatus from "./components/HealthStatus"
 
 import CategoryForm from './components/CategoryForm'
 
@@ -7,8 +8,10 @@ function App() {
   }
 
   return (
-    <main>
-      <h1>GeoInformatik – Meldeplattform</h1>
+    <main className="app">
+      <h1>GeoInformatik - Meldeplattform</h1>
+      <HealthStatus />
+      <p>Das Frontend läuft. Hier entsteht die Anwendung.</p>
 
       <CategoryForm onSubmit={handleCategorySubmit} />
     </main>
